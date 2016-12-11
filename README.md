@@ -21,18 +21,18 @@ A battle of programs in a virtual machine.
 
 See "corewar_en.pdf"
 
-#Allum-1 
+#Allum-1 (functional)
 This is a little game following the traditionnal Matches game. You start with 20 matches. The player who take the last one lose.
 
 Individual project
 
-#Minishell
+#Minishell (functional with warnings)
 The minishell is a linux command line interpretor. We had to build 2 versions of it in order to guide us to the final step: 42Sh.
 I couldn't take my hand on my 42sh project, but you can have a grasp of the first step of it.
 
 Individual project
 
-#MiniTalk
+#MiniTalk (functional)
 The aim was to create a client / server chat. You simply had to communicate with a server and be able to manage an infinite string sent to the server.
 With the best performances possible, of course ;)
 
