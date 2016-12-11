@@ -1,0 +1,119 @@
+K 25
+svn:wc:ra_dav:version-url
+V 36
+/svn/corewar-asm/!svn/ver/83/sources
+END
+convert_op1.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/corewar-asm/!svn/ver/83/sources/convert_op1.c
+END
+convert_op2.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/corewar-asm/!svn/ver/77/sources/convert_op2.c
+END
+get_prog_size.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/corewar-asm/!svn/ver/67/sources/get_prog_size.c
+END
+open_file.c
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/corewar-asm/!svn/ver/75/sources/open_file.c
+END
+convert_op3.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/corewar-asm/!svn/ver/77/sources/convert_op3.c
+END
+read_it.c
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/corewar-asm/!svn/ver/83/sources/read_it.c
+END
+writting.c
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/corewar-asm/!svn/ver/83/sources/writting.c
+END
+check_value.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/corewar-asm/!svn/ver/62/sources/check_value.c
+END
+convert_arg.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/corewar-asm/!svn/ver/82/sources/convert_arg.c
+END
+convert_little_endian.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/corewar-asm/!svn/ver/69/sources/convert_little_endian.c
+END
+op.c
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svn/corewar-asm/!svn/ver/76/sources/op.c
+END
+dlist.c
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/corewar-asm/!svn/ver/46/sources/dlist.c
+END
+get_octet_codage.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/corewar-asm/!svn/ver/80/sources/get_octet_codage.c
+END
+convert.c
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/corewar-asm/!svn/ver/82/sources/convert.c
+END
+check_value_arg2.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/corewar-asm/!svn/ver/62/sources/check_value_arg2.c
+END
+main.c
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/corewar-asm/!svn/ver/60/sources/main.c
+END
+check_value_arg3.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/corewar-asm/!svn/ver/62/sources/check_value_arg3.c
+END
+convert_hexa.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/corewar-asm/!svn/ver/77/sources/convert_hexa.c
+END
+check_args_type.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/corewar-asm/!svn/ver/59/sources/check_args_type.c
+END

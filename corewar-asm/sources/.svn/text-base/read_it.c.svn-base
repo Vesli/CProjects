@@ -1,0 +1,112 @@
+/*
+** read_it.c for asm in /home/arsac_r/corewar-asm
+** 
+** Made by Romain Arsac
+** Login   <arsac_r@epitech.net>
+** 
+** Started on  Mon Mar 18 00:18:22 2013 Romain Arsac
+** Last update Sun Mar 31 13:14:13 2013 Romain Arsac
+*/
+
+#include <stdio.h>
+#include <stdlib.h>
+#include "op.h"
+#include "my.h"
+#include "var.h"
+#include "dlist.h"
+#include "proto.h"
+#include "convert.h"
+#include "writting.h"
+
+int		nb_elem(char **tab)
+{
+  int		i;
+
+  i = 0;
+  while (tab[i])
+    i++;
+  return (i);
+}
+
+void		init_elem(t_elem *elem, char *str)
+{
+  char		**tab;
+  char		**arg;
+  int		size;
+
+  tab = my_str_to_wordtab_carac(str, ' ');
+  if (tab[0][my_strlen(tab[0]) - 1] == LABEL_CHAR)
+    {
+      elem->label = my_strncpy(tab[0], tab[0], my_strlen(tab[0]) - 1);
+      elem->op_tab = tab[1];
+      arg = my_str_to_wordtab_carac(tab[2], SEPARATOR_CHAR);
+      size = nb_elem(arg);
+      elem->arg_1 = (size >= 1 ? arg[0] : NULL);
+      elem->arg_2 = (size >= 2 ? arg[1] : NULL);
+      elem->arg_3 = (size >= 3 ? arg[2] : NULL);
+    }
+  else if (tab[0][0] && tab[0][0] != '.')
+    {
+      elem->label = elem->p_prev->label;
+      elem->op_tab = tab[0];
+      arg = my_str_to_wordtab_carac(tab[1], SEPARATOR_CHAR);
+      size = nb_elem(arg);
+      elem->arg_1 = (size >= 1 ? arg[0] : NULL);
+      elem->arg_2 = (size >= 2 ? arg[1] : NULL);
+      elem->arg_3 = (size >= 3 ? arg[2] : NULL);
+    }
+}
+
+void		my_show_list(t_dlist *dlist)
+{
+  t_elem	*elem;
+
+  elem = dlist->p_first;
+  while (elem)
+    {
+      printf("%s:\t%s\t%s,%s,%s\n", elem->label, elem->op_tab, elem->arg_1, elem->arg_2, elem->arg_3);
+      elem = elem->p_next;
+    }
+}
+
+void		create_elem(t_dlist **dlist, char *str)
+{
+  t_elem	*elem;
+  t_elem	*tmp;
+  t_dlist	*save;
+
+  save = *dlist;
+  tmp = save->p_first;
+  elem = xmalloc(sizeof(t_elem));
+  elem->p_next = NULL;
+  if (tmp == NULL)
+    {
+      elem->p_prev = NULL;
+      save->p_first = elem;
+    }
+  else
+    {
+      while (tmp->p_next != NULL)
+	tmp = tmp->p_next;
+      elem->p_prev = tmp;
+      tmp->p_next = elem;
+    }
+  init_elem(elem, str);
+  save->p_last = elem;
+}
+
+void		read_it(t_var *var, t_dlist *dlist)
+{
+  char		*str;
+  char		*str_epur;
+
+  while ((str = get_next_line(var->fd_src)) != NULL)
+    {
+      str_epur = epur_str(str);
+      if (str_epur[0] && str_epur[0] != '.' && str_epur[0] != COMMENT_CHAR)
+	create_elem(&dlist, str_epur);
+      free(str);
+    }
+  my_show_list(dlist);
+  convert_dlist(var, dlist);
+}

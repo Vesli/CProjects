@@ -1,0 +1,59 @@
+/*
+** writting.c for writting in /home/passep_j//Corewar/corewar-asm/sources
+** 
+** Made by jean-charles passepont
+** Login   <passep_j@epitech.net>
+** 
+** Started on  Mon Mar 18 05:40:12 2013 jean-charles passepont
+<<<<<<< .mine
+** Last update Mon Mar 25 21:12:07 2013 jean-charles passepont
+=======
+** Last update Mon Mar 25 22:24:47 2013 Romain Arsac
+>>>>>>> .r71
+*/
+
+#include <stdlib.h>
+#include <sys/types.h>
+#include <sys/stat.h>
+#include <fcntl.h>
+#include <unistd.h>
+#include "my.h"
+#include "op.h"
+#include "var.h"
+#include "dlist.h"
+#include "get_prog_size.h"
+#include "convert_little_endian.h"
+
+void		write_header(t_var *var, t_dlist *dlist)
+{
+  header_t	header;
+
+  header.magic = convert_little(COREWAR_EXEC_MAGIC);
+  my_memset(header.prog_name, '\0', sizeof(header.prog_name));
+  my_memset(header.comment, '\0', sizeof(header.comment));
+  my_strcpy(header.prog_name, "zork");
+  my_strcpy(header.comment, "blablabla");
+  header.prog_size = convert_little(get_prog_size(dlist));
+  var->fd_write = open("test.cor", O_WRONLY | O_CREAT, S_IRWXU);
+  write(var->fd_write, &header, sizeof(struct header_s));
+  close(var->fd_write);
+}
+<<<<<<< .mine
+
+void		write_header(t_var *var, t_dlist *list)
+{
+  int		eric = COREWAR_EXEC_MAGIC;
+  header_t	boob;
+  t_elem	*elem;
+
+  elem = list->p_first;
+  var->name = name_pointcor(var);
+  boob.magic = COREWAR_EXEC_MAGIC;
+  my_strcpy(boob.prog_name, var->name);
+  boob.prog_size = sizeof(struct header_s);
+  my_strcpy(boob.comment, var->comment);
+  write(var->fd_write, &boob, sizeof(struct header_s));
+  //  write_body(var, dlist, boob);
+}
+=======
+>>>>>>> .r71

@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 28
+/svn/corewar-asm/!svn/ver/83
+END
+distant.sh
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/svn/corewar-asm/!svn/ver/67/distant.sh
+END
+local.sh
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/svn/corewar-asm/!svn/ver/67/local.sh
+END
+clean.sh
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/svn/corewar-asm/!svn/ver/71/clean.sh
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/svn/corewar-asm/!svn/ver/77/Makefile
+END

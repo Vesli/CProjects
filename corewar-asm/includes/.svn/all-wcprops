@@ -1,0 +1,131 @@
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/svn/corewar-asm/!svn/ver/83/includes
+END
+check_args_type.h
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/corewar-asm/!svn/ver/47/includes/check_args_type.h
+END
+convert_op1.h
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/corewar-asm/!svn/ver/54/includes/convert_op1.h
+END
+get_prog_size.h
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/corewar-asm/!svn/ver/70/includes/get_prog_size.h
+END
+open_file.h
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/corewar-asm/!svn/ver/47/includes/open_file.h
+END
+convert_op2.h
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/corewar-asm/!svn/ver/58/includes/convert_op2.h
+END
+convert_op3.h
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/corewar-asm/!svn/ver/56/includes/convert_op3.h
+END
+proto.h
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/corewar-asm/!svn/ver/41/includes/proto.h
+END
+writting.h
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/corewar-asm/!svn/ver/82/includes/writting.h
+END
+read_it.h
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/corewar-asm/!svn/ver/62/includes/read_it.h
+END
+check_value.h
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/corewar-asm/!svn/ver/62/includes/check_value.h
+END
+convert_arg.h
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/corewar-asm/!svn/ver/77/includes/convert_arg.h
+END
+convert_little_endian.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/corewar-asm/!svn/ver/69/includes/convert_little_endian.h
+END
+op.h
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/corewar-asm/!svn/ver/30/includes/op.h
+END
+dlist.h
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/corewar-asm/!svn/ver/77/includes/dlist.h
+END
+get_octet_codage.h
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/corewar-asm/!svn/ver/80/includes/get_octet_codage.h
+END
+convert.h
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/corewar-asm/!svn/ver/77/includes/convert.h
+END
+check_value_arg2.h
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/corewar-asm/!svn/ver/62/includes/check_value_arg2.h
+END
+check_value_arg3.h
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/corewar-asm/!svn/ver/62/includes/check_value_arg3.h
+END
+my.h
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/corewar-asm/!svn/ver/83/includes/my.h
+END
+convert_hexa.h
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/corewar-asm/!svn/ver/77/includes/convert_hexa.h
+END
+var.h
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/corewar-asm/!svn/ver/76/includes/var.h
+END
